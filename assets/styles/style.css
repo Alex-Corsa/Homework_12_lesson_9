@@ -215,8 +215,6 @@ h1 {
 .fifth_text {
 	width: 770px;
 	height: 64px;
-	width: 770px;
-	height: 64px;
 	font-size: 13px;
 	color: #ffffff;
 	font-weight: 300;
@@ -290,6 +288,20 @@ h6 {
     justify-content: center;
 	padding: 50px;
 }
+
+/* .section_sixth {
+	background-image: linear-gradient(174deg, #ff6c54 1%, #ff2b59 99%);
+}
+
+.section_sixth_h2 {
+	margin: 0;
+	padding-top: 50px;
+	text-align: center;
+	font-size: 40px;
+	color: #ffffff;
+}
+
+.section_sixth_p {} */
 
 /* footer */
 
