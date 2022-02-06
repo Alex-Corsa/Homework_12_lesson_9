@@ -10,7 +10,7 @@ body {
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .btn {
@@ -130,7 +130,7 @@ h1 {
 }
 
 .box_text {
-	width: 770px;
+	max-width: 770px;
 	text-align: center;
     margin: auto;
 }
@@ -177,8 +177,8 @@ h1 {
 }
 
 .section_fourth_text {
-	width: 564px;
-	height: 87px;
+	max-width: 564px;
+	min-height: 87px;
 	text-align: left;
 }
 
@@ -200,8 +200,7 @@ h1 {
 
 /* <!-- section-5 --> */
 
-.section_fifth {
-	min-height: 1200px;
+.section_fifth {	
 	background-image: linear-gradient(164deg, #6dffc6 1%, #3fd2ce 99%);
 }
 
@@ -213,8 +212,8 @@ h1 {
 }
 
 .fifth_text {
-	width: 770px;
-	height: 64px;
+	max-width: 770px;
+	min-height: 64px;
 	font-size: 13px;
 	color: #ffffff;
 	font-weight: 300;
