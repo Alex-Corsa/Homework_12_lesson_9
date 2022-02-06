@@ -288,6 +288,8 @@ h6 {
 	padding: 50px;
 }
 
+/* <!-- section-6 --> */
+
 .section_sixth {
 	background-image: linear-gradient(174deg, #ff6c54 1%, #ff2b59 99%);
 }
@@ -301,9 +303,9 @@ h6 {
 }
 
 .section_sixth_p {
-	width: 770px;
-    height: 64px;
-	margin: auto;
+	max-width: 770px;
+    min-height: 64px;
+	margin: 0 auto;
 	padding-bottom: 50px;
     font-size: 13px;
     color: #ffffff;
@@ -313,34 +315,82 @@ h6 {
 
 .wrapper_sixth {
 	width: 770px;
-    margin: auto;
+    margin: 0 auto;
 	padding: 35px;
+}
+
+.input_text {
+	padding-bottom: 30px;
 	display: flex;
 	justify-content: space-between;
 }
 
 input {
-    margin: auto;
-    padding: 10px 15px;
+    padding: 0 15px;
+    line-height: 50px;
     border: 1px solid white;
     background-image: linear-gradient(174deg, #ff6c54 1%, #ff2b59 99%);
 }
 
 .input_1 {
-	width: 47%;
+	width: 48%;
 }
 
 .input_2 {
-	width: 97%;
+	width: 100%;
 }
 
-::-webkit-input-placeholder {
+.btn-1 {
+	display: flex;
+	justify-content: end;
+}
+
+input::placeholder {
 	color:    white;
- }
+}
+
+.icon {
+	width: 20px;
+	height: 18px;
+	display: inline-block;
+	background: url(../images/3-icon/name.jpg) no-repeat center center;
+	top: 50%;
+	left: 10px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+	background-size: contain;
+    position: absolute;
+}
+
+.icon_2 {
+    background: url(../images/3-icon/email.png) no-repeat center center;
+    background-size: contain;
+}
+
+.icon_3 {
+    background: url(../images/3-icon/messege.png) no-repeat center center;
+    background-size: contain;
+}
+
+input:focus + .icon{
+    opacity: 0;
+}
+
+textarea:focus + .icon{
+    opacity: 0;
+}
+
+input:focus {
+    padding-left: 10px;
+}
+
+textarea:focus {
+    padding-left: 10px;
+}
 
 .wrapper_sixth_btn {
-	width: 770px;
-    margin: auto;
+	max-width: 770px;
+    margin: 0 auto;
 	padding: 25px;
 	display: flex;
     justify-content: flex-end;
@@ -349,7 +399,6 @@ input {
 .section_sixth_btn {
 	min-width: 170px;
 	min-height: 50px;
-	margin-right: 20px;
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.2;
